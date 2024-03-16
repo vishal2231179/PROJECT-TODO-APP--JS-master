@@ -1,0 +1,277 @@
+ @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+ #main-content {
+     height: 1000px;
+     background-color: #1d479b;
+     border: 1px solid #000000;
+     font-family: sans-serif;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ body {
+     background-color: #ffffff;
+
+ }
+
+ .sub-input[type=text] {
+     padding: 10px;
+     margin-left: 20px;
+     border-radius: 10px;
+     background-color: #00A5EC;
+ }
+
+
+
+ nav {
+     display: flex;
+     background-color: rgb(242, 242, 242);
+     height: 70px;
+     align-items: center;
+     padding: 20px 100px;
+     background-color: white;
+     font-family: "Madimi One", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+ }
+
+ .add_new_text {
+     color: rgb(255, 255, 255);
+     padding: 5px;
+     transition: 500ms;
+ }
+
+ .add_new_text:hover {
+     color: aquamarine;
+     transition: 500ms;
+
+ }
+
+
+
+ #plus-icon {
+     display: flex;
+     justify-content: flex-end;
+     margin: 30px;
+
+ }
+
+ #text {
+     padding: 10px;
+     margin-top: 5px;
+     margin-right: 1px;
+     border-radius: 10px;
+ }
+
+ #del_btn_box_:hover {
+     cursor: grab;
+ }
+
+ #add-text {
+     display: flex;
+     align-items: center;
+ }
+
+ #box-container {
+     display: flex;
+     justify-content: center;
+ }
+
+ .box {
+
+     height: 250px;
+     width: 350px;
+     padding: 5rem;
+     margin: 10px;
+     background-color: rgb(201, 201, 201);
+     border-radius: 20px;
+     border-style: inset;
+     border-color: #ffffff;
+
+ }
+
+ #container {
+     display: grid;
+     grid-template-columns: repeat(3, auto);
+ }
+
+ /* .box:hover{
+    border:2px solid  #00A5EC;
+} */
+ .box hr {
+     color: #9d7a7a;
+ }
+
+ .c_box1 {
+     accent-color: gray;
+     transform: scale(1.4);
+     margin: 10px;
+ }
+
+ .c_box2 {
+     transform: scale(1.5);
+     padding: 20px;
+     margin: 15px;
+ }
+
+ .sp {
+     font-size: 18px;
+     color: #c2c2c2;
+     text-decoration: line-through;
+ }
+
+ /* FOR SECOND PAGE */
+ .overlay {
+     position: absolute;
+     top: 200px;
+     left: 50%;
+     display: flex;
+     justify-content: center;
+
+
+ }
+
+ #pop-up {
+     background-color: rgb(240, 240, 240);
+     height: 200px;
+     width: 400px;
+     /* position: absolute;
+    left:450px;
+    top: 200px; */
+     border: 2px solid black;
+     position: fixed;
+     border-radius: 10px;
+     visibility: hidden;
+     border-radius: 20px;
+
+
+
+ }
+
+ #pop-up2 {
+     background-color: rgb(240, 240, 240);
+
+     height: 200px;
+     width: 400px;
+     /* position: absolute;
+    left:450px;
+    top: 200px; */
+     border: 2px solid black;
+     position: fixed;
+     border-radius: 20px;
+     visibility: hidden;
+ }
+
+ #close {
+     position: relative;
+     left: 350px;
+     bottom: 50px;
+ }
+
+ #close:hover {
+     cursor: grab;
+ }
+
+
+
+ #bottom input {
+     color: white;
+     background-color: #00A5EC;
+     border: 1px solid #0070a0;
+     border-radius: 3px;
+     padding: 0.5rem;
+     width: 7rem;
+     margin-right: 20px;
+     position: relative;
+     left: 270px;
+     top: 50px;
+ }
+
+ #plus-icon:hover {
+     cursor: grab;
+ }
+
+ #add_btn:hover {
+     cursor: grab;
+ }
+
+ /* FOR THIRD PAGE */
+ #btn_back {
+     position: relative;
+     left: 430px;
+     top: 100px;
+
+ }
+
+ #add_back {
+     margin: 36px 0px;
+     height: 62px;
+     display: flex;
+     justify-content: center;
+ }
+
+ .btn {
+     display: inline-block;
+     margin: 0px 5rem;
+ }
+
+ #box {
+     height: 13rem;
+     width: 23rem;
+     padding: 2rem;
+     margin: 10px;
+     background-color: white;
+
+ }
+
+ #con_3 {
+     display: flex;
+     justify-content: center;
+ }
+
+ /* FOR TO DO MOBILE APP */
+ @media only screen and (max-width:1136px) and (min-width:788px) {
+
+     #container {
+         grid-template-columns: repeat(2, auto);
+     }
+ }
+
+ @media only screen and (max-width:788px) and (min-width:332px) {
+     #container {
+         grid-template-columns: repeat(1, auto);
+     }
+
+     .add_new_text {
+         /* visibility: visible; */
+         color: #f7f7f7;
+     }
+
+     nav {
+         justify-content: flex-start;
+         padding: 0;
+     }
+
+     #main-content {
+         height: 2000px;
+         /* background-color: #f7f7f7; */
+
+     }
+
+     .box {
+         width: 250px;
+     }
+ }
+
+ @media only screen and (max-width:332px) and (min-width:100px) {
+     .box {
+         width: 200px;
+         height: 170px;
+     }
+
+ }
+
+ /* scrollbar */
+ ::-webkit-scrollbar {
+     width: 1px;
+ }
